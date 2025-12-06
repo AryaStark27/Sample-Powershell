@@ -1,1 +1,1 @@
-[System.Guid]::NewGuid().ToString("P").ToUpper()
+Write-Output ([System.Guid]::NewGuid().ToString("P").ToUpper())
