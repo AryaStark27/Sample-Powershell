@@ -3,9 +3,9 @@ on: [push]
 jobs:
   build:
    runs-on: ubuntu-latest
-    steps:
+   steps:
     -uses: actions/checkout@v4
     -name: Run Powershell script
-     shell:pwsh
-     run:./NewGuid.ps1
+     shell: pwsh
+     run: ./NewGuid.ps1
 
