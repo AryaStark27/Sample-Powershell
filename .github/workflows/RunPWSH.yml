@@ -1,11 +1,17 @@
 name: Powershell script file example
-on: [push]
+
+on:
+  push:
+
 jobs:
   build:
-   runs-on: ubuntu-latest
-   steps:
-    -uses: actions/checkout@v4
-    -name: Run Powershell script
-     shell: pwsh
-     run: ./NewGuid.ps1
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v4
+    
+      - name: Run Powershell script
+        shell: pwsh
+        run: |
+          ./NewGuid.ps1
 
